@@ -1,10 +1,11 @@
-Notes on buildingspeak changes, followed by original readme from kennethreitz.
+Notes on this fork
+==================
+* uses Python 3.5 in runtime.txt and in condaenv's, but note that 3.4 still lurks in the main miniconda lib, likely due to the "Miniconda3-latest-..." file being 3.4.
+* reinstituted use of pip and requirements.txt.
+* my conda-requirements.txt includes numpy, scipy, statsmodels, pandas.
+* original slug size was over 300MB, so "rm -rf ~/.heroku/miniconda/pkgs" removes packages I don't need since I'm running everything out of the condaenv; will likely add more to the removal list to further reduce slug size.
 
--uses Python 3.5 in runtime.txt and in condaenv's, but note that 3.4 still lurks in the main miniconda lib, likely due to the "Miniconda3-latest-..." file being 3.4.
--reinstituted use of pip and requirements.txt.
--my conda-requirements.txt includes numpy, scipy, statsmodels, pandas.
--original slug size was over 300MB, so "rm -rf ~/.heroku/miniconda/pkgs" removes packages I don't need since I'm running everything out of the condaenv; will likely add more to the removal list to further reduce slug size.
-
+kennethreitz original readme...
 
 Conda Buildpack
 ===============
