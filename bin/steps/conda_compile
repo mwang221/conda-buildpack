@@ -35,4 +35,4 @@ fi
 
 # Clean up the installation environment .
 conda clean -pt --yes > /dev/null
-rm -rf ~/.heroku/miniconda
+#rm -rf ~/.heroku/miniconda
