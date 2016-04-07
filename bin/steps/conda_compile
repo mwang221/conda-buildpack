@@ -37,3 +37,4 @@ fi
 conda clean -pt --yes > /dev/null
 rm -rf ~/.heroku/miniconda/pkgs
 rm -rf ~/.heroku/miniconda/lib
+rm -rf ~/.cache
