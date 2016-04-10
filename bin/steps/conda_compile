@@ -1,4 +1,4 @@
-DEFAULT_PYTHON_VERSION="python-3.5.0"
+DEFAULT_PYTHON_VERSION="python-2.7.11"
 
 if [ ! -f runtime.txt ]; then
    echo $DEFAULT_PYTHON_VERSION > runtime.txt
@@ -17,7 +17,7 @@ curl -Os http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh  -p /app/.heroku/miniconda/ -b | indent
 rm -fr Miniconda3-latest-Linux-x86_64.sh
 
-conda create -n condaenv --yes python=$PYTHON_VERSION_NUMBER
+conda create -n condaenv --yes libgfortran python=$PYTHON_VERSION_NUMBER
 source activate condaenv
 
 conda install pip --yes | indent
@@ -35,6 +35,6 @@ fi
 
 # Clean up the installation environment .
 conda clean -pt --yes > /dev/null
-rm -rf ~/.heroku/miniconda/pkgs
+#rm -rf ~/.heroku/miniconda/pkgs
 #rm -rf ~/.heroku/miniconda/lib
 rm -rf ~/.cache
