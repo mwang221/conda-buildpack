@@ -87,7 +87,7 @@ done
 
 # Set context environment variables.
 set-env PATH '/app/.heroku/miniconda/envs/condaenv/bin:$HOME/.heroku/miniconda/bin:$PATH'
-set-default-env PYTHONPATH '/app/.heroku/miniconda/envs/condaenv/bin:/app/.heroku/python/lib/python3.5/site-packages:/app/.heroku/miniconda/envs/condaenv/lib:/app/.heroku/miniconda/envs/condaenv/lib/python3.5/site-packages:$PYTHONPATH'
+set-default-env PYTHONPATH '/app/.heroku/miniconda/envs/condaenv/bin:/app/.heroku/python/lib/python2.7/site-packages:/app/.heroku/miniconda/envs/condaenv/lib:/app/.heroku/miniconda/envs/condaenv/lib/python2.7/site-packages:$PYTHONPATH'
 set-env PYTHONUNBUFFERED true
 set-default-env LANG en_US.UTF-8
 set-default-env PYTHONHASHSEED random
